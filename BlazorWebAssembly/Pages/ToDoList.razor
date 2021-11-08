@@ -1,7 +1,33 @@
 ﻿@page "/todo"
 
-<h3>To Do List @temp</h3>
+<h3> @temp To Do List @toDoList.Count(todo => !todo.IsDone)</h3>
+
+<ul>
+				@foreach (var item in toDoList)
+				{
+								<li>
+												<input type="checkbox" @bind="item.IsDone" />
+												@item.Title
+								</li>
+				}
+</ul>
+
+<input type="text" placeholder="sth to do" @bind="newToDo" />
+<button @onclick="AddToDo">Add to do</button>
 
 @code {
 				private string temp = "Blazor";
+
+				private List<ToDoItem> toDoList = new();
+
+				private string newToDo;
+
+				private void AddToDo()
+				{
+								if (!string.IsNullOrWhiteSpace(newToDo))
+								{
+												toDoList.Add(new ToDoItem { Title = newToDo });
+												newToDo = string.Empty;
+								}
+				}
 }
