@@ -184,11 +184,11 @@ Bật solution lên -> có thể dung VS Code or VS
 
 Coding:
 1. Gọi component trong page
-2. tạo 1 file JS trong folder scripts -> viết hàm alert()…
+2.Tạo 1 partial class cho code lúc nãy (partial class: tách nhỏ để dễ qly code hơn)
+3. tạo 1 file JS trong folder scripts -> viết hàm alert()…
 -Gọi script trong index
 -Add @using Microsoft.JSInterop in _imports.razor
 -Call JS in razor page
-3.Tạo 1 partial class cho code lúc nãy (partial class: tách nhỏ để dễ qly code hơn)
 
 27.
 ko có
