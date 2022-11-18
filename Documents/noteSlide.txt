@@ -179,9 +179,10 @@ Bật solution lên -> có thể dung VS Code or VS
 -> có rootcomponent ->  nó sẽ hiển thị cái j -> có index.html -> id = app -> hiển thị cái này
 -> có file _import.razor -> import library
 -> wwwroot: như là 1 web app bth thôi, lưu static html, css style
+-> shared: component dung chung
+
 Về cơ bản, blazor webassembly là tập hợp các file có đuôi razor
 -> pages: file có đuôi .razor, style riêng từng page -> nói sơ sơ về component (@page, các tag, @code: logic component, có thể tách ra file .CS khác =cách dung partial class)
--> shared: component dung chung
 
 Coding:
 1. Gọi component trong page
