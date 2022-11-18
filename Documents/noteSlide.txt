@@ -171,14 +171,15 @@ dotnet new blazorwasm -> default template
 dotnet watch run
 
 Bật F12 lên -> show số lượng MB cần load và show DLL (trong cache storage)
--> load nhiều -> NHƯNG -> chỉ là lần đầu tiên -> cache lại rồi
+-> load nhiều -> NHƯNG -> chỉ là lần đầu tiên -> cache lại rồi, DLL là cái rất ít khi thay đổi, nếu có them mới thì chỉ download 1 xíu thôi, mấy tram KB -> rất là nhanh
 
 Bật solution lên -> có thể dung VS Code or VS
 
 -> mở file program.cs
 -> có rootcomponent ->  nó sẽ hiển thị cái j -> có index.html -> id = app -> hiển thị cái này
 -> có file _import.razor -> import library
--> wwwroot: static html, css style
+-> wwwroot: như là 1 web app bth thôi, lưu static html, css style
+Về cơ bản, blazor webassembly là tập hợp các file có đuôi razor
 -> pages: file có đuôi .razor, style riêng từng page -> nói sơ sơ về component (@page, các tag, @code: logic component, có thể tách ra file .CS khác =cách dung partial class)
 -> shared: component dung chung
 
@@ -189,6 +190,8 @@ Coding:
 -Gọi script trong index
 -Add @using Microsoft.JSInterop in _imports.razor
 -Call JS in razor page
+
+
 
 27.
 ko có
